@@ -73,4 +73,15 @@ trait RouteResourceTrait
     {
         return $this->extras([$this->privilegeKey => $privilege]);
     }
+
+    /**
+     * Provided by BaseRoute classes
+     *
+     * @param array $extras array of extras
+     *
+     * @return $this
+     *
+     * @access public
+     */
+    abstract public function extras(array $extras);
 }
